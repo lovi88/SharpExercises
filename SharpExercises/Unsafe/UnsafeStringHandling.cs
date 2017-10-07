@@ -1,5 +1,4 @@
 ﻿using System;
-using NUnit.Framework;
 
 namespace SharpExercises.Unsafe
 {
@@ -16,19 +15,13 @@ namespace SharpExercises.Unsafe
                 {
                     for (int i = 0; i < str.Length + 5; i++)
                     {
-                        Console.Write((p+i)->ToString());
+                        Console.Write((p + i)->ToString());
                     }
                     Console.WriteLine();
                 }
             }
         }
-     
-    }
-    
 
-    [TestFixture]
-    class UnsafeStringHandlingTest
-    {
-        
     }
+
 }
