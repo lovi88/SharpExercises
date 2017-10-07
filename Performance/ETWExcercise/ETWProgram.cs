@@ -35,15 +35,40 @@ namespace ETWExcercise
          * Process filter: ETWExcercise to see exceptions just from this process.
          * Filer: Use lovi88 to see the messages.
          * Fileter Use exc -> Exception start to find the thrown exception
-         * Filter lovi88|exc for both (fileter is a Regex)
+         * Filter lovi88|exc for both (fileter is a Regex )
+         * 
+         * You can add new columns, Sort by columns, Text filter by columns and filter by time with the start end or by selecting on the histogram and Alt+R.
+         * 
+         * You can select more than one event type and push F5 to show them.
+         * 
+         * If you select an exception wich has stack: Right click Open Any stack shows the stack information of that stack.
+         * 
+         * The filter can be used to filter to CPU usage, or GC usage and much more.
          * 
          * Sometimes the PV process blocks the file to analyze with other tools you may want to abort collecting by Collection/Abort (Alt+A)
+         * 
+         * PerfView can be opened from command prompt and has a CLI to address all its main features.
          * 
          * You can merge the file if you want so you can analyze the etl file in an other machine. (It is a long process.)
          */
 
         #endregion
 
+        #region WPR amd WPR
+        /**
+         * WPR amd WPR
+         * 
+         * WPR: Win Perf Recorder 
+         *     Can be used for collecting.
+         * 
+         * WPA: Win Perf Analyzer
+         * 
+         * To use etl files created by PerfView you may have to merge the files.
+         *     Merging etl files: With PerfView or by xperf -merge PerfViewData.etl PerfViewData.kernel.etl merged.etl
+         * 
+         * Open System Activity/Generic Events to see your events.
+         */
+        #endregion
 
 
         /// <summary>
