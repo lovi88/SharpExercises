@@ -1,12 +1,15 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
+using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 
-namespace Debugging
+namespace NtsdAndWinDbgUsage
 {
-    static class DebuggingProgram
+    internal static class DebuggingProgram
     {
-
         #region Ntsd and WinDbg usage
 
         /**
@@ -43,8 +46,8 @@ namespace Debugging
         * q - quits the debuging session
         * 
         * ------------------------------------------------------
-        * Windbg(the ntsd commands can be used as well): 
-        * Run Debugging.exe
+        * WinDbg(the ntsd commands can be used as well): 
+        * Run NtsdAndWinDbgUsage.exe
         * Attach Windbg (F6)
         * .loadby sos clr
         * .chain - shows the loadad sos
@@ -58,16 +61,16 @@ namespace Debugging
         */
 
         #endregion
-
-        public static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            //while (!Debugger.IsAttached)
-            //{
-            //    Thread.Sleep(100);
-            //}
+            while (!Debugger.IsAttached)
+            {
+                Console.WriteLine("Waiting for a debugger.");
+                Thread.Sleep(1000);
+            }
 
-            //Debugger.Break();
-            Console.WriteLine("Apple");
+            Console.WriteLine($"Is Debugger Attached: {Debugger.IsAttached}");
+            Console.WriteLine("WinDbg id cool");
         }
     }
 }

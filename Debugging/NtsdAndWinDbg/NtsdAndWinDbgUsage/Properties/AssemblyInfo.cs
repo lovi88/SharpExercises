@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Debugging")]
+[assembly: AssemblyTitle("NtsdAndWinDbgUsage")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Debugging")]
+[assembly: AssemblyProduct("NtsdAndWinDbgUsage")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("8b5f6f81-9734-4a73-98cc-a1207d7b0432")]
+[assembly: Guid("7f067b7d-618d-413e-ae23-ab8c599c0718")]
 
 // Version information for an assembly consists of the following four values:
 //
