@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="CustomRadioButton.IconRadioButton"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CustomRadioButton"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Template>
+        
+        <ControlTemplate TargetType="UserControl">
+            <RadioButton GroupName="{Binding Path=RadioGroupName, RelativeSource={RelativeSource TemplatedParent}}">
+                <RadioButton.Template>
+                    <ControlTemplate TargetType="{x:Type RadioButton}">
+
+                        <StackPanel>
+
+                            <Image 
+                                x:Name="Icon" Source="{Binding SourceOff, 
+                                RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:IconRadioButton}}}"
+                                Width="64"
+                                Height="64"
+                                />
+
+                            <!--<Label Content="{Binding IsChecked, RelativeSource={RelativeSource TemplatedParent}}" />-->
+
+                            <Label Content="{Binding Text, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:IconRadioButton}}}"/>
+
+                        </StackPanel>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+
+                                <Setter TargetName="Icon" Property="Source" 
+                                        Value="{Binding SourceOn, 
+                                        RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:IconRadioButton}}}" />
+
+                            </Trigger>
+
+                        </ControlTemplate.Triggers>
+
+                    </ControlTemplate>
+                </RadioButton.Template>
+                <RadioButton.ContentTemplate>
+                    <DataTemplate>
+                        <DataTemplate.Triggers>
+                            <DataTrigger>
+                            </DataTrigger>
+                        </DataTemplate.Triggers>
+                        
+                    </DataTemplate>
+                </RadioButton.ContentTemplate>
+                
+            </RadioButton>
+        </ControlTemplate>
+        
+    </UserControl.Template>
+</UserControl>

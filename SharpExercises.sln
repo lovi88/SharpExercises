@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+VisualStudioVersion = 15.0.27004.2006
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpExercises", "SharpExercises\SharpExercises.csproj", "{9971BC8E-BD57-42A8-A50D-57BD76DA6B2A}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NtsdAndWinDbg", "NtsdAndWinDbg", "{7700A51F-B235-4BF2-A2A8-C04ABB9BD880}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NtsdAndWinDbgUsage", "Debugging\NtsdAndWinDbg\NtsdAndWinDbgUsage\NtsdAndWinDbgUsage.csproj", "{7F067B7D-618D-413E-AE23-AB8C599C0718}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomRadioButton", "CustomRadioButton\CustomRadioButton.csproj", "{27FDE852-2321-4D82-B6CC-0D8E8E5BA223}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7F067B7D-618D-413E-AE23-AB8C599C0718}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F067B7D-618D-413E-AE23-AB8C599C0718}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7F067B7D-618D-413E-AE23-AB8C599C0718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27FDE852-2321-4D82-B6CC-0D8E8E5BA223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27FDE852-2321-4D82-B6CC-0D8E8E5BA223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27FDE852-2321-4D82-B6CC-0D8E8E5BA223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27FDE852-2321-4D82-B6CC-0D8E8E5BA223}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
